@@ -1,0 +1,7 @@
+{"time":"2025-04-10T06:43:50.458997319+06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/temp/Sami_DLV3+_BrickField/wandb/run-20250410_064350-lfxom7mp/logs/debug-core.log"}
+{"time":"2025-04-10T06:43:50.563441976+06:00","level":"INFO","msg":"created new stream","id":"lfxom7mp"}
+{"time":"2025-04-10T06:43:50.563484925+06:00","level":"INFO","msg":"stream: started","id":"lfxom7mp"}
+{"time":"2025-04-10T06:43:50.563568537+06:00","level":"INFO","msg":"sender: started","stream_id":"lfxom7mp"}
+{"time":"2025-04-10T06:43:50.563619987+06:00","level":"INFO","msg":"handler: started","stream_id":"lfxom7mp"}
+{"time":"2025-04-10T06:43:50.563551377+06:00","level":"INFO","msg":"writer: Do: started","stream_id":"lfxom7mp"}
+{"time":"2025-04-10T06:43:51.108173562+06:00","level":"INFO","msg":"Starting system monitor"}

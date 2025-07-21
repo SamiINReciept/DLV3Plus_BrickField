@@ -1,0 +1,80 @@
+The run id is dy1rrz1d
+Epoch: 1 / 30:   0%|                                         | 0/563 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 546, in <module>
+    main(args)
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 465, in main
+    train(args, model, train_loader, test_loader, device, restart = args.restart)
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 278, in train
+    outputs = model(images)
+              ^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+           ^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/Sami_DLV3+_BrickField/DeepLabV3Plus/network/utils.py", line 15, in forward
+    features = self.backbone(x)
+               ^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/Sami_DLV3+_BrickField/DeepLabV3Plus/network/utils.py", line 80, in forward
+    x = module(x)
+        ^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/Sami_DLV3+_BrickField/DeepLabV3Plus/network/backbone/resnet.py", line 109, in forward
+    out = self.conv3(out)
+          ^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 47.71 GiB of which 619.56 MiB is free. Process 1263503 has 1.15 GiB memory in use. Including non-PyTorch memory, this process has 40.95 GiB memory in use. Of the allocated memory 40.21 GiB is allocated by PyTorch, and 148.77 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

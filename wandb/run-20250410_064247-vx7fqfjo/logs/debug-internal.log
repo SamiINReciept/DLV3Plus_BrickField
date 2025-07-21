@@ -1,0 +1,13 @@
+{"time":"2025-04-10T06:42:47.65542398+06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/temp/Sami_DLV3+_BrickField/wandb/run-20250410_064247-vx7fqfjo/logs/debug-core.log"}
+{"time":"2025-04-10T06:42:47.759925269+06:00","level":"INFO","msg":"created new stream","id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:47.759967119+06:00","level":"INFO","msg":"stream: started","id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:47.76002822+06:00","level":"INFO","msg":"sender: started","stream_id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:47.76000635+06:00","level":"INFO","msg":"writer: Do: started","stream_id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:47.760065861+06:00","level":"INFO","msg":"handler: started","stream_id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:48.329264863+06:00","level":"INFO","msg":"stream: closing","id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:48.329712667+06:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-04-10T06:42:49.295787557+06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-10T06:42:49.295896198+06:00","level":"INFO","msg":"handler: closed","stream_id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:49.295923568+06:00","level":"INFO","msg":"sender: closed","stream_id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:49.295926219+06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vx7fqfjo"}
+{"time":"2025-04-10T06:42:49.29605991+06:00","level":"INFO","msg":"stream: closed","id":"vx7fqfjo"}

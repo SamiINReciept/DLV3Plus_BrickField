@@ -1,0 +1,17 @@
+{"time":"2025-03-09T06:13:35.428113228+06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/temp/Sami_DLV3+_Brickfield/wandb/run-20250309_061335-cpq9j6cy/logs/debug-core.log"}
+{"time":"2025-03-09T06:13:35.532141899+06:00","level":"INFO","msg":"created new stream","id":"cpq9j6cy"}
+{"time":"2025-03-09T06:13:35.532187279+06:00","level":"INFO","msg":"stream: started","id":"cpq9j6cy"}
+{"time":"2025-03-09T06:13:35.53221466+06:00","level":"INFO","msg":"writer: Do: started","stream_id":"cpq9j6cy"}
+{"time":"2025-03-09T06:13:35.53222567+06:00","level":"INFO","msg":"handler: started","stream_id":"cpq9j6cy"}
+{"time":"2025-03-09T06:13:35.5322888+06:00","level":"INFO","msg":"sender: started","stream_id":"cpq9j6cy"}
+{"time":"2025-03-09T06:13:35.999278866+06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T06:56:06.459988881+06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 103.159.2.125:58128->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-09T08:40:06.532187707+06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-03-09T10:26:53.406566157+06:00","level":"INFO","msg":"stream: closing","id":"cpq9j6cy"}
+{"time":"2025-03-09T10:26:53.406611677+06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T10:26:53.407434799+06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T10:26:55.709883119+06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T10:26:56.102221421+06:00","level":"INFO","msg":"handler: closed","stream_id":"cpq9j6cy"}
+{"time":"2025-03-09T10:26:56.10225499+06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cpq9j6cy"}
+{"time":"2025-03-09T10:26:56.10230801+06:00","level":"INFO","msg":"sender: closed","stream_id":"cpq9j6cy"}
+{"time":"2025-03-09T10:26:56.10237985+06:00","level":"INFO","msg":"stream: closed","id":"cpq9j6cy"}

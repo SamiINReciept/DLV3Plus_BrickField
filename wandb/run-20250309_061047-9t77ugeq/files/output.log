@@ -1,0 +1,11 @@
+The run id is 9t77ugeq
+Epoch: 1 / 30:   1%|▋                                                       | 10/844 [00:11<15:54,  1.14s/it]
+Traceback (most recent call last):
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 504, in <module>
+    main(args)
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 445, in main
+    train(args, model, train_loader, test_loader, device, restart = args.restart)
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 275, in train
+    running_loss += loss.item()
+                    ^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,41 @@
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_setup.py:_flush():68] Current SDK version is 0.19.6
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_setup.py:_flush():68] Configure stats pid to 2712514
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_setup.py:_flush():68] Loading settings from /home/temp/.config/wandb/settings
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_setup.py:_flush():68] Loading settings from /home/temp/Sami_DLV3+_BrickField/wandb/settings
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /home/temp/Sami_DLV3+_BrickField/wandb/run-20250410_064247-vx7fqfjo/logs/debug.log
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /home/temp/Sami_DLV3+_BrickField/wandb/run-20250410_064247-vx7fqfjo/logs/debug-internal.log
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_init.py:init():756] calling init triggers
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'batch_size': 48, 'epoch': 30, 'learning_rate': 0.001, '_wandb': {}}
+2025-04-10 06:42:47,443 INFO    MainThread:2712514 [wandb_init.py:init():789] starting backend
+2025-04-10 06:42:47,649 INFO    MainThread:2712514 [wandb_init.py:init():793] sending inform_init request
+2025-04-10 06:42:47,653 INFO    MainThread:2712514 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-04-10 06:42:47,653 INFO    MainThread:2712514 [wandb_init.py:init():808] backend started and connected
+2025-04-10 06:42:47,655 INFO    MainThread:2712514 [wandb_init.py:init():901] updated telemetry
+2025-04-10 06:42:47,660 INFO    MainThread:2712514 [wandb_init.py:init():936] communicating run to backend with 90.0 second timeout
+2025-04-10 06:42:48,323 WARNING MainThread:2712514 [wandb_init.py:init():1475] interrupted
+Traceback (most recent call last):
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 941, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 275, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 122, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 118, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2025-04-10 06:42:48,329 WARNING MsgRouterThr:2712514 [router.py:message_loop():75] message_loop has been closed

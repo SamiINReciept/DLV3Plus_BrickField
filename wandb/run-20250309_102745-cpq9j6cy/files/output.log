@@ -1,0 +1,32 @@
+The run id is cpq9j6cy
+Epoch: 15 / 30: 100%|██████████████████████████████| 750/750 [12:07<00:00,  1.03it/s]
+mean_iou for epoch 14 is 0.8802835721030065
+2025-03-09 10:40:08,213 - root - INFO - Epoch 15/30, Train Loss: 0.0006, Val Loss: 0.0122, IoU: 0.8803
+Epoch: 16 / 30:   7%|██                             | 50/750 [00:50<11:48,  1.01s/it]
+Traceback (most recent call last):
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 504, in <module>
+    main(args)
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 445, in main
+    train(args, model, train_loader, test_loader, device, restart = args.restart)
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 273, in train
+    optimizer.step()
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/optim/adam.py", line 244, in step
+    adam(
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 154, in maybe_fallback
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/optim/adam.py", line 876, in adam
+    func(
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/optim/adam.py", line 685, in _multi_tensor_adam
+    1 - beta1 ** _get_value(step) for step in device_state_steps
+                 ^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 106, in _get_value
+    return x.item() if isinstance(x, torch.Tensor) else x
+           ^^^^^^^^
+KeyboardInterrupt

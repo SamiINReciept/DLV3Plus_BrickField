@@ -1,0 +1,17 @@
+The run id is 4oeowc4h
+Epoch: 1 / 30:   0%|                                 | 1/659 [00:04<49:36,  4.52s/it]
+Traceback (most recent call last):
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 546, in <module>
+    main(args)
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 465, in main
+    train(args, model, train_loader, test_loader, device, restart = args.restart)
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 292, in train
+    loss.backward()
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 47.71 GiB of which 487.06 MiB is free. Process 1263503 has 1.15 GiB memory in use. Including non-PyTorch memory, this process has 41.08 GiB memory in use. Of the allocated memory 38.62 GiB is allocated by PyTorch, and 1.85 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

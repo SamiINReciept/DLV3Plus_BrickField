@@ -1,0 +1,14 @@
+The run id is s60xokpw
+Epoch: 1 / 30: 100%|███████████████████████████████| 675/675 [12:27<00:00,  1.11s/it]
+mean_iou for epoch 0 is 0.8684558986561223
+2025-04-10 06:58:03,486 - root - INFO - Epoch 1/30, Train Loss: 0.0115, Val Loss: 0.0016, IoU: 0.8685
+Epoch: 2 / 30:  25%|███████▊                       | 170/675 [03:11<09:27,  1.12s/it]
+Traceback (most recent call last):
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 546, in <module>
+    main(args)
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 465, in main
+    train(args, model, train_loader, test_loader, device, restart = args.restart)
+  File "/home/temp/Sami_DLV3+_BrickField/mainDLV3Plus.py", line 295, in train
+    running_loss += loss.item()
+                    ^^^^^^^^^^^
+KeyboardInterrupt

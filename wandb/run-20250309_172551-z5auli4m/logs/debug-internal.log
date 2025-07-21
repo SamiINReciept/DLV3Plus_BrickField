@@ -1,0 +1,19 @@
+{"time":"2025-03-09T17:25:51.386569067+06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/temp/Sami_DLV3+_Brickfield/wandb/run-20250309_172551-z5auli4m/logs/debug-core.log"}
+{"time":"2025-03-09T17:25:51.489797+06:00","level":"INFO","msg":"created new stream","id":"z5auli4m"}
+{"time":"2025-03-09T17:25:51.48983991+06:00","level":"INFO","msg":"stream: started","id":"z5auli4m"}
+{"time":"2025-03-09T17:25:51.489876691+06:00","level":"INFO","msg":"writer: Do: started","stream_id":"z5auli4m"}
+{"time":"2025-03-09T17:25:51.489988652+06:00","level":"INFO","msg":"handler: started","stream_id":"z5auli4m"}
+{"time":"2025-03-09T17:25:51.489918471+06:00","level":"INFO","msg":"sender: started","stream_id":"z5auli4m"}
+{"time":"2025-03-09T17:25:51.967791229+06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T21:40:23.47175421+06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-09T22:03:39.280015306+06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 103.159.2.125:43836->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-09T22:05:01.689229226+06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 103.159.2.125:43752->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-09T22:54:16.951583343+06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 103.159.2.125:57268->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-09T23:35:30.695945995+06:00","level":"INFO","msg":"stream: closing","id":"z5auli4m"}
+{"time":"2025-03-09T23:35:30.695974055+06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T23:35:30.696786015+06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T23:35:31.85361509+06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T23:35:32.289326655+06:00","level":"INFO","msg":"handler: closed","stream_id":"z5auli4m"}
+{"time":"2025-03-09T23:35:32.289391186+06:00","level":"INFO","msg":"sender: closed","stream_id":"z5auli4m"}
+{"time":"2025-03-09T23:35:32.289391215+06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"z5auli4m"}
+{"time":"2025-03-09T23:35:32.289510255+06:00","level":"INFO","msg":"stream: closed","id":"z5auli4m"}

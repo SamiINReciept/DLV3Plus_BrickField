@@ -1,0 +1,15 @@
+{"time":"2025-04-10T06:42:07.559176053+06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/temp/Sami_DLV3+_BrickField/wandb/run-20250410_064207-r981ucpu/logs/debug-core.log"}
+{"time":"2025-04-10T06:42:07.66321747+06:00","level":"INFO","msg":"created new stream","id":"r981ucpu"}
+{"time":"2025-04-10T06:42:07.663258771+06:00","level":"INFO","msg":"stream: started","id":"r981ucpu"}
+{"time":"2025-04-10T06:42:07.6632973+06:00","level":"INFO","msg":"writer: Do: started","stream_id":"r981ucpu"}
+{"time":"2025-04-10T06:42:07.663353112+06:00","level":"INFO","msg":"sender: started","stream_id":"r981ucpu"}
+{"time":"2025-04-10T06:42:07.663521703+06:00","level":"INFO","msg":"handler: started","stream_id":"r981ucpu"}
+{"time":"2025-04-10T06:42:08.195468906+06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-10T06:42:15.886395531+06:00","level":"INFO","msg":"stream: closing","id":"r981ucpu"}
+{"time":"2025-04-10T06:42:15.88644592+06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-10T06:42:15.887300561+06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-10T06:42:17.102337658+06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-10T06:42:17.547881541+06:00","level":"INFO","msg":"handler: closed","stream_id":"r981ucpu"}
+{"time":"2025-04-10T06:42:17.547934812+06:00","level":"INFO","msg":"sender: closed","stream_id":"r981ucpu"}
+{"time":"2025-04-10T06:42:17.547923332+06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"r981ucpu"}
+{"time":"2025-04-10T06:42:17.548028122+06:00","level":"INFO","msg":"stream: closed","id":"r981ucpu"}

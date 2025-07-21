@@ -1,0 +1,50 @@
+The run id is th584suf
+Epoch: 1 / 30:   0%|                                                                 | 0/675 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 504, in <module>
+    main(args)
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 445, in main
+    train(args, model, train_loader, test_loader, device, restart = args.restart)
+  File "/home/temp/Sami_DLV3+_Brickfield/mainDLV3+.py", line 258, in train
+    outputs = model(images)
+              ^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+           ^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/Sami_DLV3+_Brickfield/DeepLabV3Plus/network/utils.py", line 16, in forward
+    x = self.classifier(features)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/miniconda3/envs/lightning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temp/Sami_DLV3+_Brickfield/DeepLabV3Plus/network/_deeplab.py", line 51, in forward
+    return self.classifier( torch.cat( [ low_level_feature, output_feature ], dim=1 ) )
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 380.00 MiB. GPU 0 has a total capacity of 47.71 GiB of which 356.62 MiB is free. Process 2858169 has 4.20 GiB memory in use. Including non-PyTorch memory, this process has 37.35 GiB memory in use. Of the allocated memory 36.41 GiB is allocated by PyTorch, and 348.55 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
