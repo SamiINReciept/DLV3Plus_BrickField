@@ -1,47 +1,60 @@
-# Semantic Segmentation for Object Identification from Satellite Imagery (DLV3Plus_BrickField)
-
+🛰️ Semantic Segmentation for Object Identification from Satellite Imagery
 📖 Overview
-This project presents an end-to-end pipeline for semantic segmentation of high-resolution satellite imagery, with a focus on the Dhaka district of Bangladesh. The primary goal was to develop a deep learning model capable of accurately identifying and classifying objects at the pixel level.
 
-A key contribution of this work is the creation of a novel, meticulously annotated dataset of 2900+ image patches. The project utilizes the DeepLabv3+ architecture and achieves excellent performance, demonstrating a robust workflow from raw data collection to model evaluation.
+This project presents an end-to-end pipeline for semantic segmentation of high-resolution satellite imagery, focusing on the Dhaka district of Bangladesh. The primary goal was to develop a deep learning model capable of accurately identifying and classifying objects at the pixel level.
+
+A key contribution of this work is the creation of a novel, meticulously annotated dataset of over 2900 image patches. The project utilizes the DeepLabv3+ architecture and demonstrates excellent performance, offering a robust workflow from raw data collection to model evaluation.
 
 ✨ Key Features
+
 Custom Dataset: A unique, pixel-level annotated dataset of 2900+ 512x512 satellite image patches.
 
 High-Performance Model: Achieved a mIoU of 0.9106 for binary-class segmentation.
 
-End-to-End Pipeline: A complete, 9-step data processing pipeline from image acquisition to a model-ready dataset.
+End-to-End Pipeline: A complete, 9-step data processing pipeline from image acquisition to model-ready dataset.
 
-Reproducibility: Comprehensive experiment tracking using Weights & Biases for over 6 major training runs.
+Reproducibility: Comprehensive experiment tracking using Weights & Biases across 6+ major training runs.
 
 🏞️ The Dhaka Satellite Imagery Dataset
-The dataset developed in this project is a core component of this research. It consists of:
 
-2900+ Image Patches: Sliced into 512x512 pixel resolution.
+The dataset developed in this project is a core component of the research. It consists of:
 
-High-Resolution Source: Derived from geotagged (.tiff) satellite imagery.
+2900+ Image Patches: Each resized to 512x512 pixels.
 
-Pixel-Level Annotations: Each image is paired with a manually created segmentation mask, making it suitable for supervised deep learning tasks.
+High-Resolution Source: Derived from geotagged .tiff satellite imagery.
 
-Geographical Focus: All images are from the Dhaka district, providing a specialized dataset for urban object analysis.
+Pixel-Level Annotations: Each image is paired with a manually created segmentation mask, ideal for supervised learning tasks.
+
+Geographical Focus: All imagery is sourced from the Dhaka district, offering a specialized dataset for urban object analysis.
 
 ⚙️ Methodology & Pipeline
-The project was executed through a systematic 9-step pipeline:
 
-Data Acquisition: Collecting high-resolution satellite imagery.
+The project follows a structured, 9-step pipeline:
 
-Geospatial Preprocessing: Merging and handling geotagged .tiff files using qGIS.
+Data Acquisition
+Collecting high-resolution satellite imagery from publicly available sources.
 
-Image Patching: Slicing large satellite maps into 2900+ smaller 512x512 patches.
+Geospatial Preprocessing
+Merging and handling .tiff files using QGIS for proper geospatial alignment.
 
-Data Annotation: Performing meticulous pixel-level labeling for binary classification.
+Image Patching
+Slicing large satellite maps into 2900+ smaller 512x512 patches.
 
-Automated Workflow: Using Bash scripts to automate the creation of training, validation, and test sets.
+Data Annotation
+Performing meticulous pixel-level labeling for binary classification.
 
-Model Selection: Implementing the DeepLabv3+ architecture for its effectiveness in semantic segmentation.
+Automated Workflow
+Automating dataset splits (train/val/test) using Bash scripts.
 
-Accelerated Training: Leveraging a high-performance server with 2 x NVIDIA L40S (48GB) GPUs. Each training run lasted over 7 hours.
+Model Selection
+Implementing DeepLabv3+ for its superior performance in semantic segmentation tasks.
 
-Experiment Tracking: Using Weights & Biases (Wandb) to log metrics, compare 6+ hyperparameter combinations, and visualize results.
+Accelerated Training
+Training conducted on a high-performance server with
+2 x NVIDIA L40S (48GB) GPUs. Each run lasted over 7 hours.
 
-Performance Benchmarking: Evaluating the model using Mean Intersection over Union (mIoU) and F1-score metrics.
+Experiment Tracking
+Using Weights & Biases (wandb) to log metrics, track experiments, and compare 6+ hyperparameter combinations.
+
+Performance Benchmarking
+Model evaluated using Mean Intersection over Union (mIoU) and F1-score metrics.
