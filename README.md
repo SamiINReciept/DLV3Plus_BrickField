@@ -1,8 +1,8 @@
-# Semantic Segmentation for Object Identification from Satellite Imagery
+# Semantic Segmentation for Object Identification from Satellite Image
 
 ## Overview
 
-This project presents an end-to-end pipeline for semantic segmentation of high-resolution satellite imagery, focusing on the Dhaka district of Bangladesh. The primary goal was to develop a deep learning model capable of accurately identifying and classifying objects at the pixel level.
+This project presents an end-to-end pipeline for semantic segmentation of high-resolution satellite image, focusing on the Dhaka district of Bangladesh. The primary goal was to develop a deep learning model capable of accurately identifying and classifying objects at the pixel level.
 
 A key contribution of this work is the creation of a novel, meticulously annotated dataset of over 2900 image patches. The project utilizes the DeepLabv3+ architecture and demonstrates excellent performance, offering a robust workflow from raw data collection to model evaluation.
 
@@ -53,3 +53,4 @@ The project follows a structured, 9-step pipeline:
 
 9. **Performance Benchmarking**  
    Model evaluated using Mean Intersection over Union (mIoU) and F1-score metrics.
+
